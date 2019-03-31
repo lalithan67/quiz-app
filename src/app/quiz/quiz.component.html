@@ -1,0 +1,51 @@
+<div class="header-container">
+  <div class="logo">
+    <img src="assets/images/darwin.png" />
+  </div>
+  <div class="timer">
+  <div class="timer-row">
+    <span class="timer-text">Seconds</span>
+    <span class="timer-text">Minutes</span>
+  </div>
+  <div class="timer-count">
+    <span class="timer-countdown" [ngClass]="{'count-red': minutes<1}">{{seconds}}</span>
+    <span class="timer-countdown" [ngClass]="{'count-red': minutes<1}">{{minutes}}</span>
+  </div>
+  </div>
+</div>
+<div class="questions-container">
+  <div class="questions">
+    <p class="error">Note: Donot refresh or press back button while answering</p>
+    <p class="error" [hidden]="!showerror">Please answer this question.</p>
+    <div class="questions-text"><span>Q {{count+1}}. </span><span> {{selectedques.question}}</span></div>
+    <div class="options-class">
+      <div class="option">
+        <div><input type="radio" value={{selectedques.option1}} name="options" [(ngModel)]="selectedques.selectedopt"></div>
+        <div class="option-val">a)</div>
+        <div class="option-text"><label>{{selectedques.option1}}</label></div>
+      </div>
+      <div class="option">
+        <span><input type="radio" value={{selectedques.option2}} name="options" [(ngModel)]="selectedques.selectedopt"></span>
+        <span class="option-val">b)</span>
+        <span><label class="option-text">{{selectedques.option2}}</label></span>
+      </div>
+      <div class="option">
+        <div><input type="radio" value={{selectedques.option3}} name="options" [(ngModel)]="selectedques.selectedopt"></div>
+        <div class="option-val">c)</div>
+        <div class="option-text"><label>{{selectedques.option3}}</label></div>
+      </div>
+      <div class="option">
+        <span><input type="radio" value={{selectedques.option4}} name="options" [(ngModel)]="selectedques.selectedopt"></span>
+        <span class="option-val">d)</span>
+        <span><label class="option-text">{{selectedques.option4}}</label></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="prev-next-container">
+  <button (click)="setPrevQues()" [ngClass]="{'disabled': (count === 0) }">Previous</button>
+  <button (click)="setNextQues()" [ngClass]="{'disabled': (count === maxques-1) }">Next</button>
+</div>
+<div class="submit-container" [hidden]="count < maxques-1">
+  <button (click)="checkData()">Submit</button>
+</div>

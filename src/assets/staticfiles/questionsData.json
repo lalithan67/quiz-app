@@ -1,0 +1,69 @@
+[{
+	"question":"Entomology is the science that studies",
+	"option1":"Behavior of human beings",
+	"option2":"Insects",
+	"option3":"The origin and history of technical and scientific terms",
+	"option4":"The formation of rocks",
+	"correctans":"Insects",
+	"selectedopt":""
+},
+{
+	"question":"The number of already named bones in the human skeleton is",
+	"option1":"200",
+	"option2":"206",
+	"option3":"212",
+	"option4":"218",
+	"correctans":"206",
+	"selectedopt":""
+},{
+	"question":"Who is the father of geometry?",
+	"option1":"Aristotle",
+	"option2":"Euclid",
+	"option3":"Pythagoras",
+	"option4":"Kepler",
+	"correctans":"Euclid",
+	"selectedopt":""
+},{
+	"question":"Who is popularly called as the Iron Man of India?",
+	"option1":"Subhash Chandra Bose",
+	"option2":"Sardar Vallabhbhai Patel",
+	"option3":"Jawaharlal Nehru",
+	"option4":"Govind Ballabh Pant",
+	"correctans":"Sardar Vallabhbhai Patel",
+	"selectedopt":""
+},
+{
+	"question":"The radioactive element radium was invented by which of the following scientists?",
+	"option1":"Marie Curie",
+	"option2":"Benjamin Franklin",
+	"option3":"Albert Einstein",
+	"option4":"Isaac Newton",
+	"correctans":"Marie Curie",
+	"selectedopt":""
+},{
+	"question":"The red blood cells are in the",
+	"option1":"heart",
+	"option2":"liver",
+	"option3":"lymph nodes",
+	"option4":"bone marrow",
+	"correctans":"bone marrow",
+	"selectedopt":""
+},
+{
+	"question":"The significance of the lotus symbol is",
+	"option1":"culture and civilisation",
+	"option2":"peace",
+	"option3":"justice",
+	"option4":"sign of mourning, in protest",
+	"correctans":"culture and civilisation",
+	"selectedopt":""
+},
+{
+	"question":"The 'Black flag' signifies",
+	"option1":"revolution",
+	"option2":"peace",
+	"option3":"protest",
+	"option4":"truce",
+	"correctans":"protest",
+	"selectedopt":""
+}]

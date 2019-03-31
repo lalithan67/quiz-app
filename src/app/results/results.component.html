@@ -1,0 +1,27 @@
+<div class="header-container">
+  <div class="logo">
+    <img src="assets/images/darwin.png" />
+  </div>
+  <div class="title">
+    <h2 style="text-align:center">
+      Thank you for taking quiz.
+    </h2>
+  </div>
+</div>
+
+<div class="results-container">
+	<p><span class="bold-class score">Your Score: {{correctansw}} / {{total}}</span></p>
+	<p><span>Correct Answers: </span><span class="bold-class c-a">{{correctansw}}</span></p>
+	<p><span>Wrong Answers: </span><span class="bold-class w-a">{{wrongans}}</span></p>
+	<p><span>UnAttempted Answers: </span> <span class="bold-class u-a">{{unsubmitted}}</span></p>
+</div>
+
+
+ <div class="pie-chart-block">
+  <canvas baseChart width="2" height="1"
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [colors]="pieChartColors"
+          [options]="pieChartSettings" ></canvas>
+</div>
